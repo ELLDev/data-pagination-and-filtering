@@ -39,12 +39,16 @@ showPage = (list, page) => {
         <span class="origin">Origin: ${list[index].origin.country}</span>
       </div>
     </li>
-    `;  
+    `;
   }
   if (list.length === 0) {
     cheeseList.innerHTML = '<h3 class="warning-message">No results found</h3>';
   }
 };
+
+/**
+ * Add pagination buttons according to the number of displayed items.
+ */
 
 addPagination = (list) => {
   const numberOfPages = Math.ceil(list.length / 9);
