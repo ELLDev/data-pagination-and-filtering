@@ -85,6 +85,7 @@ h3.warning-message {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
   grid-gap: 2em;
+  justify-items: center;
 }
 
 .cheese-item {
@@ -201,5 +202,6 @@ h3.warning-message {
   .cheese-item {
     border-radius: 5px;
     box-shadow: 0 4px 16px 0 rgba(22, 42, 90, 0.09);
+    max-width: 310px;
   }
 }
